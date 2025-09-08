@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 934e1de8cab51824fb309bd882536732
+guid: 6846ee1cfba631c4eb5630e328e5e200
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7580738133652620349
-    second: Climate Collapse logo_0
+      213: 8203741235515227786
+    second: jonas andando lado diuretri_0
+  - first:
+      213: -7819850681082509031
+    second: jonas andando lado diuretri_1
+  - first:
+      213: -5476474846231719261
+    second: jonas andando lado diuretri_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 74
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Climate Collapse logo_0
+      name: jonas andando lado diuretri_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 157
-        height: 159
+        x: 0
+        y: 0
+        width: 51
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cbb068f4decbc690800000000000000
-      internalID: -7580738133652620349
+      spriteID: a8efb1c303b89d170800000000000000
+      internalID: 8203741235515227786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonas andando lado diuretri_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9190b75ac3f4a7390800000000000000
+      internalID: -7819850681082509031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonas andando lado diuretri_2
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 0
+        width: 51
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a21ff89427aff3b0800000000000000
+      internalID: -5476474846231719261
       vertices: []
       indices: 
       edges: []
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Climate Collapse logo_0: -7580738133652620349
+      jonas andando lado diuretri_0: 8203741235515227786
+      jonas andando lado diuretri_1: -7819850681082509031
+      jonas andando lado diuretri_2: -5476474846231719261
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

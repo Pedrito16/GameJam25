@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 934e1de8cab51824fb309bd882536732
+guid: f8b3838738ab54a4aa43eeb0b8ddb0a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7580738133652620349
-    second: Climate Collapse logo_0
+      213: -5033353510949541367
+    second: ANDANDO ATRA_0
+  - first:
+      213: 6039089221320141311
+    second: ANDANDO ATRA_1
+  - first:
+      213: 241041427605875333
+    second: ANDANDO ATRA_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 74
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Climate Collapse logo_0
+      name: ANDANDO ATRA_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 157
-        height: 159
+        x: 0
+        y: 0
+        width: 59
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cbb068f4decbc690800000000000000
-      internalID: -7580738133652620349
+      spriteID: 90a23ee46afe52ab0800000000000000
+      internalID: -5033353510949541367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANDANDO ATRA_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff96dab76a72fc350800000000000000
+      internalID: 6039089221320141311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANDANDO ATRA_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ae99cb6e9585300800000000000000
+      internalID: 241041427605875333
       vertices: []
       indices: 
       edges: []
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Climate Collapse logo_0: -7580738133652620349
+      ANDANDO ATRA_0: -5033353510949541367
+      ANDANDO ATRA_1: 6039089221320141311
+      ANDANDO ATRA_2: 241041427605875333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

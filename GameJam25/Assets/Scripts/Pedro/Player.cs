@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,6 +8,12 @@ public class Player : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] SpriteRenderer spriteRenderer;
     Animator animator;
+    public bool canMove;
+    public static Player instance;
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -14,6 +21,8 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
+        if (!canMove) return;
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
