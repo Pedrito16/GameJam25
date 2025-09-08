@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      waterplant_tile_anim_strip_8_0: 2788267131190171375
+      waterplant_tile_anim_strip_8_1: -1605774546220653217
+      waterplant_tile_anim_strip_8_2: -4828589284751657169
+      waterplant_tile_anim_strip_8_3: 2809650267237482662
+      waterplant_tile_anim_strip_8_4: 318462138563926492
+      waterplant_tile_anim_strip_8_5: 7133290143365199442
+      waterplant_tile_anim_strip_8_6: -3843591895587535577
+      waterplant_tile_anim_strip_8_7: -5745134057383114343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

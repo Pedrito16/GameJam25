@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lootchest_item_anim_opening_strip_5_0: -122414412155754069
+      lootchest_item_anim_opening_strip_5_1: -5886735949650639968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

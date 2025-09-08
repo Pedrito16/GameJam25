@@ -510,7 +510,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      plant_prop_anim_cut_strip_6_0: 5283955817435277947
+      plant_prop_anim_cut_strip_6_1: -1251083827264830105
+      plant_prop_anim_cut_strip_6_10: -647907633805059343
+      plant_prop_anim_cut_strip_6_11: 1305189913343965479
+      plant_prop_anim_cut_strip_6_12: 8864670063265036391
+      plant_prop_anim_cut_strip_6_13: 3542624913164244255
+      plant_prop_anim_cut_strip_6_14: 3277975086817222534
+      plant_prop_anim_cut_strip_6_2: -6644986208053626367
+      plant_prop_anim_cut_strip_6_3: 1354156666918538266
+      plant_prop_anim_cut_strip_6_4: 175001185930222763
+      plant_prop_anim_cut_strip_6_5: -1834976867204432578
+      plant_prop_anim_cut_strip_6_6: -7520595454872631924
+      plant_prop_anim_cut_strip_6_7: -5849416960073463577
+      plant_prop_anim_cut_strip_6_8: -7952104189360038952
+      plant_prop_anim_cut_strip_6_9: 7590015163265594097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

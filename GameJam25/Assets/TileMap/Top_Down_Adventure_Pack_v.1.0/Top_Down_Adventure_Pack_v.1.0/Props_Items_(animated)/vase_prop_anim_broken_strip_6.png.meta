@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vase_prop_anim_broken_strip_6_0: -472041949443648054
+      vase_prop_anim_broken_strip_6_1: 2207830757765755168
+      vase_prop_anim_broken_strip_6_2: 304927858366358002
+      vase_prop_anim_broken_strip_6_3: -883086780573669419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      water_tile_anim_strip_8_0: 7273185659286031226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

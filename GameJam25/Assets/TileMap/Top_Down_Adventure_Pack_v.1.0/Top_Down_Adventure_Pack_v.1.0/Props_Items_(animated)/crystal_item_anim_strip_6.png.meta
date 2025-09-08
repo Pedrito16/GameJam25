@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crystal_item_anim_strip_6_0: 6159561933890825382
+      crystal_item_anim_strip_6_1: -5170028770650086062
+      crystal_item_anim_strip_6_2: 7956307860043065489
+      crystal_item_anim_strip_6_3: 3100185210616816805
+      crystal_item_anim_strip_6_4: 5068431591056972579
+      crystal_item_anim_strip_6_5: -3304279501042857209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      regia_waterplant_tile_anim_strip_8_0: -2479151527026951419
+      regia_waterplant_tile_anim_strip_8_1: 2475506386703117591
+      regia_waterplant_tile_anim_strip_8_2: -5270950795439371289
+      regia_waterplant_tile_anim_strip_8_3: -3845892599061472481
+      regia_waterplant_tile_anim_strip_8_4: -7236513139143479654
+      regia_waterplant_tile_anim_strip_8_5: 1178818880213624872
+      regia_waterplant_tile_anim_strip_8_6: 525868796362258167
+      regia_waterplant_tile_anim_strip_8_7: -6759526347797570196
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

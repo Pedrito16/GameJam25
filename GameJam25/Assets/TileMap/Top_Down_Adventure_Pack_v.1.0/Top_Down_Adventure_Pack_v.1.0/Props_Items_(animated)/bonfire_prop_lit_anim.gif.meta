@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bonfire_prop_lit_anim_0: -6308938104574444281
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      key_item_collected_anim_strip_6_0: -6985145164570599531
+      key_item_collected_anim_strip_6_1: 1302737604641069080
+      key_item_collected_anim_strip_6_2: 8068192660453857792
+      key_item_collected_anim_strip_6_3: 3337863470540593296
+      key_item_collected_anim_strip_6_4: -4627022773168067481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

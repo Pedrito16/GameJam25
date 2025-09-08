@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      iron_gate_closing_anim_strip_8_0: 8426684217223575040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      door_tile_locked_opening_anim_strip_10_0: 7803749409352492434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

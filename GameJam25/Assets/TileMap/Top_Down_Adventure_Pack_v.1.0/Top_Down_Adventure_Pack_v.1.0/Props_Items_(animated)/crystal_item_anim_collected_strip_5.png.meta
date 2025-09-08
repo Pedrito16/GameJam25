@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crystal_item_anim_collected_strip_5_0: -4862507437621515776
+      crystal_item_anim_collected_strip_5_1: 6389370679452876742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

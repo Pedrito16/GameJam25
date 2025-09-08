@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      edge_water_tile_anim_0: 1681511224780330921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
