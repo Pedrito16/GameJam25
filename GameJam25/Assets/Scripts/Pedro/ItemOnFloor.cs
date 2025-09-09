@@ -21,7 +21,7 @@ public class ItemOnFloor : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        InventoryManager.instance.AddItem(item);
+        InventoryManager.instance.AddItem(item, transform.position);
         Destroy(gameObject);
     }
 

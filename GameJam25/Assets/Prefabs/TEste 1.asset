@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TEste 1
   m_EditorClassIdentifier: 
   itemName: Suprimento
-  itemSprite: {fileID: -122414412155754069, guid: dc011cd0645101049be1c5adcc0b2c86, type: 3}
+  itemSprite: {fileID: -7580738133652620349, guid: 934e1de8cab51824fb309bd882536732, type: 3}
   tipoDeItem: 1
   typeColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

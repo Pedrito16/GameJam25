@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TEste 2
   m_EditorClassIdentifier: 
   itemName: Semente
-  itemSprite: {fileID: -122414412155754069, guid: dc011cd0645101049be1c5adcc0b2c86, type: 3}
+  itemSprite: {fileID: -3224343741028812653, guid: b0913cfb91bd69c4584f78b61bbb83fe, type: 3}
   tipoDeItem: 0
   typeColor: {r: 0, g: 1, b: 0, a: 1}

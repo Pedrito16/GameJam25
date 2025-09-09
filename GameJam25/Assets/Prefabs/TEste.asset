@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TEste
   m_EditorClassIdentifier: 
   itemName: Equipamento
-  itemSprite: {fileID: -122414412155754069, guid: dc011cd0645101049be1c5adcc0b2c86, type: 3}
+  itemSprite: {fileID: -170462221761905861, guid: 0894ac6012872f34d8ea4b30095e1f8b, type: 3}
   tipoDeItem: 2
   typeColor: {r: 1, g: 0, b: 0, a: 1}
