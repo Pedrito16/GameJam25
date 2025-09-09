@@ -22,11 +22,14 @@ public class WireMinigameContrller : MonoBehaviour
     }
     public void CheckIfAllEnded()
     {
-        bool completed = false;
+        bool completed = true;
         for(int i = 0; i < wires.Length; i++)
         {
-            if (!wires[i].isCompleted) break;
-            completed = true;
+            if (!wires[i].isCompleted)
+            {
+                completed = false;
+                break;
+            }
         }
 
         if (completed)
