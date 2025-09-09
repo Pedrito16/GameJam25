@@ -11,10 +11,10 @@ TagManager:
   - Interactable
   - Water
   - UI
+  - player
   - 
-  - 
-  - Wire
-  - Socket
+  - winCollider
+  - ResetCollider
   - 
   - 
   - 
