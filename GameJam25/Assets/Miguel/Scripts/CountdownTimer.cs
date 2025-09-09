@@ -100,7 +100,6 @@ public class CountdownTimer : MonoBehaviour
     {
         if (timerText == null) return;
 
-        // 1 MINUTO OU MENOS - Fica vermelho piscando
         if (currentTime <= 60f && currentTime > 0f)
         {
             timerText.color = dangerColor;
@@ -109,7 +108,6 @@ public class CountdownTimer : MonoBehaviour
                 StartBlinking();
             }
         }
-        // Tempo normal - cor branca
         else if (currentTime > 60f)
         {
             StopBlinking();
@@ -148,14 +146,12 @@ public class CountdownTimer : MonoBehaviour
     {
         while (isBlinking && currentTime > 0f)
         {
-            // Piscar entre 0.3 e 1.0 de alpha
             float alpha = Mathf.PingPong(Time.time * blinkSpeed * 2f, 0.7f) + 0.3f;
             timerText.alpha = alpha;
 
             yield return null;
         }
 
-        // Quando terminar de piscar, garante opacidade total
         timerText.alpha = 1f;
     }
 
@@ -164,18 +160,16 @@ public class CountdownTimer : MonoBehaviour
         isTimerRunning = false;
         StopBlinking();
 
-        // Quando chega a zero: para de piscar mas continua vermelho
         if (timerText != null)
         {
             timerText.text = "00:00";
             timerText.color = dangerColor;
-            timerText.alpha = 1f; // Vermelho sólido
+            timerText.alpha = 1f;
         }
 
         Debug.Log("Tempo esgotado! Game Over!");
 
-        // Aqui você chama sua lógica de game over
-        // FindObjectOfType<GameManager>().GameOver();
+
     }
 
     public void AddTime(float minutesToAdd)

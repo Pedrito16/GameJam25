@@ -285,13 +285,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.28310433, y: 1.4686037, z: 1.3322556}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 327752634}
+  m_Children: []
   m_Father: {fileID: 1244958176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -322.8, y: -134.3}
+  m_AnchoredPosition: {x: -320.9, y: -134.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &59775138
@@ -554,8 +553,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Siga-nos no instagram
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30d0a0637c0db864199273c0d7772286, type: 2}
+  m_sharedMaterial: {fileID: 576438942428976402, guid: 30d0a0637c0db864199273c0d7772286, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -579,8 +578,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -617,7 +616,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 42.866215, w: 0}
+  m_margin: {x: 0, y: 0, z: 76.81197, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -638,16 +637,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327752631}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7, y: 1, z: 1}
+  m_LocalScale: {x: 1.0474861, y: 1.4686036, z: 1.3322556}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 59775137}
+  m_Father: {fileID: 1244958176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 148, y: -39.7}
+  m_AnchoredPosition: {x: -261.5, y: -192.60356}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &425539376
@@ -1679,6 +1678,7 @@ RectTransform:
   - {fileID: 1826053936}
   - {fileID: 571909707}
   - {fileID: 59775137}
+  - {fileID: 327752634}
   - {fileID: 1110621120}
   - {fileID: 446961526}
   - {fileID: 1217638893}
@@ -1873,7 +1873,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Game
+          m_StringArgument: Cutscene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1826053938
