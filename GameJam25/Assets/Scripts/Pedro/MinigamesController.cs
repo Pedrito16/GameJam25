@@ -6,6 +6,8 @@ public class MinigamesController : MonoBehaviour, IInteractable
 {
     [SerializeField] int minigamesToComplete = 2;
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] AudioSource completeSound;
+    [SerializeField] AudioSource doorUnlockSound;
     int minigamesCompleted = 0;
     bool allCompleted;
     public static MinigamesController instance;
@@ -33,10 +35,16 @@ public class MinigamesController : MonoBehaviour, IInteractable
     public void CheckIfAllCompleted()
     {
         minigamesCompleted++;
-        if(minigamesCompleted >= minigamesToComplete)
+        completeSound?.Play();
+        MainTextController.instance.WriteText("Concluído!", Color.green);
+
+        if (minigamesCompleted >= minigamesToComplete)
         {
             print("todos os minigames concluidos");
             PlayerPrefs.SetInt("MinigamesCompleted", 1);
+            allCompleted = true;
+            doorUnlockSound?.Play();
+            MainTextController.instance.WriteText("Concluído! A porta foi liberada", Color.green);
         }
     }
 

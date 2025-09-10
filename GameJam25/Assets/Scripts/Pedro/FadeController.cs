@@ -10,7 +10,7 @@ public class FadeController : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(transform.root);
         }
         else
         {

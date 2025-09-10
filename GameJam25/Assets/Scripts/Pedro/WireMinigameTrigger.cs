@@ -1,13 +1,15 @@
 using UnityEngine;
 using Unity.Cinemachine;
 using TMPro;
+using System.Collections;
 
-public class LockCameraMinigame : MonoBehaviour, IInteractable
+public class WireMinigameTrigger : MonoBehaviour, IInteractable
 {
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] CinemachineCamera CinemachineCamNew;
     [SerializeField] GameObject particle;
-    public static LockCameraMinigame instance;
+    [SerializeField] AudioSource shockSound;
+    public static WireMinigameTrigger instance;
     void Awake()
     {
         if(instance == null)
@@ -22,6 +24,20 @@ public class LockCameraMinigame : MonoBehaviour, IInteractable
     void Start()
     {
         text.gameObject.SetActive(false);
+
+        int minigames = PlayerPrefs.GetInt("MinigamesCompleted", 0);
+        if (minigames > 0)
+        {
+            MinigameDone();
+            return;
+        }
+        StartCoroutine(shockSoundLoop());
+    }
+    void MinigameDone()
+    {
+        shockSound.gameObject.SetActive(false);
+        particle.SetActive(false);
+        Destroy(this);
     }
     public void EnterRadius()
     {
@@ -44,12 +60,21 @@ public class LockCameraMinigame : MonoBehaviour, IInteractable
         Player.instance.canMove = true;
 
         MinigamesController.instance.CheckIfAllCompleted();
-
+        StopAllCoroutines();
+        shockSound.gameObject.SetActive(false);
         particle.SetActive(false);
         text.gameObject.SetActive(false);
         Destroy(this);
     }
-
+    IEnumerator shockSoundLoop()
+    {
+        while (true)
+        {
+            shockSound.Play();
+            yield return new WaitForSeconds(5f);
+            shockSound.Stop();
+        }
+    }
     public void LeaveRadius()
     {
         text.gameObject.SetActive(false);

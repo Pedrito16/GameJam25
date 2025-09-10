@@ -22,6 +22,12 @@ public class InteragirComputador : MonoBehaviour, IInteractable
     }
     void Start()
     {
+        int minigames = PlayerPrefs.GetInt("MinigamesCompleted", 0);
+        if(minigames > 0)
+        {
+            Destroy(this);
+            return;
+        }
         DragAndDropPuzzle.instance.onWin.AddListener(OnComplete);
     }
     public void EnterRadius()
