@@ -18,6 +18,12 @@ public class WireMinigameContrller : MonoBehaviour
     }
     void Start()
     {
+        int minigames = PlayerPrefs.GetInt("MinigamesCompleted", 0);
+        if (minigames > 0)
+        {
+            Destroy(this);
+            return;
+        }
         wires = GetComponentsInChildren<WireLittleCube>();
     }
     public void CheckIfAllEnded()
@@ -34,7 +40,7 @@ public class WireMinigameContrller : MonoBehaviour
 
         if (completed)
         {
-            LockCameraMinigame.instance.Deactivate();
+            WireMinigameTrigger.instance.Deactivate();
             Debug.Log("Minigame Completed!");
         }
     }
