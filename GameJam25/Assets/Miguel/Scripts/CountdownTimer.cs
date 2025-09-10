@@ -37,16 +37,21 @@ public class CountdownTimer : MonoBehaviour
 
     void Start()
     {
+        timerText.gameObject.SetActive(false);
         canCount = true;
 
-        InitializeTimer();
 
         if (startOnAwake)
         {
             StartTimer();
         }
     }
-
+    public void TimerShowAndStart()
+    {
+        timerText.gameObject.SetActive(true);
+        InitializeTimer();
+        StartTimer();
+    }
     void InitializeTimer()
     {
         currentTime = startMinutes * 60f;

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Foguete_0: -7693201395931180115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

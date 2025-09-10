@@ -9,6 +9,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] GameObject sorterHierarchy;
     [SerializeField] List<Image> slots;
     [SerializeField] GameObject itemTemplate;
+
     public static InventoryManager instance;
     private void Awake()
     {
@@ -25,6 +26,24 @@ public class InventoryManager : MonoBehaviour
         {
             slots.Add(child.GetComponent<Image>());
         }
+        SetActive(false);
+    }
+    public void ClearInventory()
+    {
+        foreach (Image slot in slots)
+        {
+            if (slot.transform.childCount > 0)
+            {
+                foreach (Transform child in slot.transform)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+        }
+    }
+    public void SetActive(bool active)
+    {
+        sorterHierarchy.SetActive(active);
     }
     public void AddItem(Item item, Vector2 currentPos)
     {

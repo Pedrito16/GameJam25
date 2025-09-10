@@ -58,6 +58,7 @@ public class WireMinigameTrigger : MonoBehaviour, IInteractable
 
         CountdownTimer.instance.PauseTimer(false);
         Player.instance.canMove = true;
+        
 
         MinigamesController.instance.CheckIfAllCompleted();
         StopAllCoroutines();

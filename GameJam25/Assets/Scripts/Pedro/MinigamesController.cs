@@ -10,6 +10,7 @@ public class MinigamesController : MonoBehaviour, IInteractable
     [SerializeField] AudioSource doorUnlockSound;
     int minigamesCompleted = 0;
     bool allCompleted;
+
     public static MinigamesController instance;
     void Awake()
     {
@@ -28,10 +29,16 @@ public class MinigamesController : MonoBehaviour, IInteractable
         int minigames = PlayerPrefs.GetInt("MinigamesCompleted", 0);
         if(minigames > 0)
         {
+            ActivateEverything();
             allCompleted = true;
         }
     }
-
+    void ActivateEverything()
+    {
+        LivroButton.instance.SetActive(true);
+        InventoryManager.instance.SetActive(true);
+        CountdownTimer.instance.TimerShowAndStart();
+    }
     public void CheckIfAllCompleted()
     {
         minigamesCompleted++;
@@ -44,6 +51,9 @@ public class MinigamesController : MonoBehaviour, IInteractable
             PlayerPrefs.SetInt("MinigamesCompleted", 1);
             allCompleted = true;
             doorUnlockSound?.Play();
+            LivroButton.instance.SetActive(true);
+            InventoryManager.instance.SetActive(true);
+            CountdownTimer.instance.TimerShowAndStart();
             MainTextController.instance.WriteText("Concluído! A porta foi liberada", Color.green);
         }
     }
