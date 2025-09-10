@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2483242358637324209}
   - component: {fileID: 8897045895041286025}
   - component: {fileID: 5752191682135425023}
+  - component: {fileID: 6222046923109028726}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5125682689192813137}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -33.13925}
   m_LocalScale: {x: 0.7272727, y: 0.6666667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47,11 +48,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
+    Enabled: 1
     m_Value: 0
   OutputChannel: 1
   StandbyUpdate: 2
-  m_StreamingVersion: 20230301
+  m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
     TrackingTarget: {fileID: 3158840196827370749}
@@ -59,7 +60,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 4.83
+    OrthographicSize: 1.58
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -89,13 +90,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b617507da6d07e749b7efdb34e1173e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FollowOffset: {x: 0, y: 0, z: -10}
   TrackerSettings:
     BindingMode: 4
     PositionDamping: {x: 1, y: 1, z: 1}
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
+  FollowOffset: {x: 0, y: 0, z: -10}
 --- !u!114 &5752191682135425023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +110,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damping: 0
+--- !u!114 &6222046923109028726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125682689192813137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoundingShape2D: {fileID: 0}
+  Damping: 0.5
+  SlowingDistance: 5
+  OversizeWindow:
+    Enabled: 0
+    MaxWindowSize: 0
+    Padding: 0
+  m_LegacyMaxWindowSize: -2
 --- !u!1 &8714744401880577328
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,10 +141,10 @@ GameObject:
   - component: {fileID: 3158840196827370749}
   - component: {fileID: 5043979354916388357}
   - component: {fileID: 5790651084203170225}
+  - component: {fileID: 4040889295600448049}
   - component: {fileID: 2841294603651931485}
   - component: {fileID: 6103327906925322195}
   - component: {fileID: 6146099465299945895}
-  - component: {fileID: 4040889295600448049}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -141,7 +162,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 27.259, y: -4.898, z: 0}
-  m_LocalScale: {x: 1.375, y: 1.5, z: 1}
+  m_LocalScale: {x: 0.41491577, y: 0.45263538, z: 0.30175695}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7887052800015353763}
@@ -190,7 +211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -214,11 +235,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4429589a14779754494c74cce2004e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1.5
   direction: {x: 0, y: 0}
   rb: {fileID: 2841294603651931485}
   spriteRenderer: {fileID: 0}
   canMove: 1
+--- !u!114 &4040889295600448049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714744401880577328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0bfb58d7a8f90847bc14687432de2a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 0.5
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  objInRadius: {fileID: 0}
 --- !u!50 &2841294603651931485
 Rigidbody2D:
   serializedVersion: 5
@@ -314,20 +352,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4040889295600448049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8714744401880577328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0bfb58d7a8f90847bc14687432de2a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactRange: 2
-  interactLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  objInRadius: {fileID: 0}

@@ -4,10 +4,7 @@ using UnityEngine.EventSystems;
 public class ItemContainer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Item item;
-    [SerializeField] float timeOver = 2;
     [SerializeField] bool isMouseOver = false;
-    float timer = 0;
-    bool canCount;
     void Start()
     {
         
