@@ -4,9 +4,8 @@ using TMPro;
 
 public class LockCameraMinigame : MonoBehaviour, IInteractable
 {
-    [SerializeField] Transform lockPlace;
     [SerializeField] TextMeshProUGUI text;
-    [SerializeField] CinemachineCamera CMcamNew;
+    [SerializeField] CinemachineCamera CinemachineCamNew;
     [SerializeField] GameObject particle;
     public static LockCameraMinigame instance;
     void Awake()
@@ -33,17 +32,21 @@ public class LockCameraMinigame : MonoBehaviour, IInteractable
     public void Interact()
     {
         print("Locking camera");
-        CMcamNew.Priority = 2;
-        CountdownTimer.instance.canCount = false;
+        CinemachineCamNew.Priority = 2;
+        CountdownTimer.instance.PauseTimer(true);
         Player.instance.canMove = false;
     }
     public void Deactivate()
     {
+        CinemachineCamNew.Priority = 0;
+
+        CountdownTimer.instance.PauseTimer(false);
+        Player.instance.canMove = true;
+
+        MinigamesController.instance.CheckIfAllCompleted();
+
         particle.SetActive(false);
         text.gameObject.SetActive(false);
-        CMcamNew.Priority = 0;
-        CountdownTimer.instance.canCount = true;
-        Player.instance.canMove = true;
         Destroy(this);
     }
 

@@ -39,6 +39,19 @@ public class DragAndDropPuzzle : MonoBehaviour
     private Vector3 offset;
     private Rigidbody2D rb;
 
+    public static DragAndDropPuzzle instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         startPosition = transform.position;

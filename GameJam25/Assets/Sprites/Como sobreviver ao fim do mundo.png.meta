@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 05bdcdaa939f7c94da41a4c90acb69cc
+guid: 6ae4e3054a0de8147b9490ac1e709eff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2419705268950952105
-    second: jonas_0
+      213: 656998435028607171
+    second: Como sobreviver ao fim do mundo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 74
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jonas_0
+      name: Como sobreviver ao fim do mundo_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 58
-        height: 74
+        y: 48
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a866f83f15849120800000000000000
-      internalID: 2419705268950952105
+      spriteID: 3c02ed188902e1900800000000000000
+      internalID: 656998435028607171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Como sobreviver ao fim do mundo_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a68b2d2f1b7e9541be88adc600d9b50
+      internalID: -445187116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Como sobreviver ao fim do mundo_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59eec7bd2eb27a64eb8ea94806c42a0e
+      internalID: 524944565
       vertices: []
       indices: 
       edges: []
@@ -151,7 +195,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 207e47e225b31c64f8f3bb99ae113034
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +205,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jonas_0: 2419705268950952105
+      Como sobreviver ao fim do mundo_0: 656998435028607171
+      Como sobreviver ao fim do mundo_1: -445187116
+      Como sobreviver ao fim do mundo_2: 524944565
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
