@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 05bdcdaa939f7c94da41a4c90acb69cc
+guid: abd05aa90cb146142800eaea13168057
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2419705268950952105
-    second: jonas_0
+      213: 7512226180000440461
+    second: jonas de frente_0
+  - first:
+      213: -272361967382614556
+    second: jonas de frente_1
+  - first:
+      213: 3990758613009387612
+    second: jonas de frente_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,12 +132,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jonas_0
+      name: jonas de frente_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 58
+        width: 59
         height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a866f83f15849120800000000000000
-      internalID: 2419705268950952105
+      spriteID: d80e053c8e9c04860800000000000000
+      internalID: 7512226180000440461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonas de frente_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 60
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed25d3db30683cf0800000000000000
+      internalID: -272361967382614556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonas de frente_2
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5051c880d5026730800000000000000
+      internalID: 3990758613009387612
       vertices: []
       indices: 
       edges: []
@@ -151,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jonas_0: 2419705268950952105
+      jonas de frente_0: 7512226180000440461
+      jonas de frente_1: -272361967382614556
+      jonas de frente_2: 3990758613009387612
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

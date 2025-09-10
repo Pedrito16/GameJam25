@@ -74,7 +74,11 @@ public class CountdownTimer : MonoBehaviour
         }
         StopBlinking();
     }
-
+    public void PauseTimer(bool pause)
+    {
+        canCount = !pause;
+        timerText.gameObject.SetActive(!pause);
+    }
     public void ResetTimer()
     {
         StopTimer();
