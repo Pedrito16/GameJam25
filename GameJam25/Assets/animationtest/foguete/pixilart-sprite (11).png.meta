@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -129,12 +129,12 @@ TextureImporter:
       name: pixilart-sprite (11)_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2847
         y: 0
-        width: 27550
+        width: 950
         height: 540
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,6 +143,204 @@ TextureImporter:
       bones: []
       spriteID: ef5f66552ea33e4a0800000000000000
       internalID: -6565339088006220290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_1
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07f7eaa726368b499b58b904731d6b6
+      internalID: 1226853545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_2
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e080f5c02efc5c348ba53e58a02218d5
+      internalID: 1116686022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602f05c83f95a0c439242b0b3a3886dd
+      internalID: -1407552351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_4
+      rect:
+        serializedVersion: 2
+        x: 3790
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6570eefd0e7d4ed40ba0ea72bedc1da5
+      internalID: 172862709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_5
+      rect:
+        serializedVersion: 2
+        x: 4738
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d69600a949d5a47994b90769a31104
+      internalID: 594872554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_6
+      rect:
+        serializedVersion: 2
+        x: 5690
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518bc6c1a85d62c4791f33aca5b4e7e5
+      internalID: 1545199090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_7
+      rect:
+        serializedVersion: 2
+        x: 6642
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809a1881b9f204e4a90a03d47cd77c98
+      internalID: 151376046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_8
+      rect:
+        serializedVersion: 2
+        x: 7589
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd085ad2bc83f6c4e8791a17837b8d33
+      internalID: 1443687430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (11)_9
+      rect:
+        serializedVersion: 2
+        x: 8545
+        y: 0
+        width: 950
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b6327631dc6ea4680738dc605744dc
+      internalID: -391783215
       vertices: []
       indices: 
       edges: []
@@ -162,6 +360,15 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       pixilart-sprite (11)_0: -6565339088006220290
+      pixilart-sprite (11)_1: 1226853545
+      pixilart-sprite (11)_2: 1116686022
+      pixilart-sprite (11)_3: -1407552351
+      pixilart-sprite (11)_4: 172862709
+      pixilart-sprite (11)_5: 594872554
+      pixilart-sprite (11)_6: 1545199090
+      pixilart-sprite (11)_7: 151376046
+      pixilart-sprite (11)_8: 1443687430
+      pixilart-sprite (11)_9: -391783215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
