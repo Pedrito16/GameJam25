@@ -27,7 +27,8 @@ public class WireLittleCube : MonoBehaviour
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
-        lineRenderer.SetPosition(0, transform.position);
+        Vector2 offset = new Vector2(transform.position.x + 0.45f, transform.position.y);
+        lineRenderer.SetPosition(0, offset);
         lineRenderer.SetPosition(1, mousePos);
     }
     private void OnMouseUp()

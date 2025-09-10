@@ -19,11 +19,26 @@ public class CountdownTimer : MonoBehaviour
     private float currentTime;
     private bool isTimerRunning = false;
     private bool isBlinking = false;
+    public bool canCount;
     private Coroutine timerCoroutine;
     private Coroutine blinkCoroutine;
 
+    public static CountdownTimer instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(transform.root);
+        }
+        else
+            Destroy(gameObject);
+    }
+
     void Start()
     {
+        canCount = true;
+
         InitializeTimer();
 
         if (startOnAwake)
@@ -44,7 +59,7 @@ public class CountdownTimer : MonoBehaviour
 
         isTimerRunning = true;
         if (timerCoroutine != null)
-        {
+        { 
             StopCoroutine(timerCoroutine);
         }
         timerCoroutine = StartCoroutine(TimerCountdown());
@@ -73,6 +88,9 @@ public class CountdownTimer : MonoBehaviour
     {
         while (currentTime > 0 && isTimerRunning)
         {
+            while (!canCount)
+                yield return null;
+
             yield return new WaitForSeconds(1f);
             currentTime -= 1f;
             UpdateTimerDisplay();
@@ -146,6 +164,8 @@ public class CountdownTimer : MonoBehaviour
     {
         while (isBlinking && currentTime > 0f)
         {
+            while (!canCount)
+                yield return null;
             float alpha = Mathf.PingPong(Time.time * blinkSpeed * 2f, 0.7f) + 0.3f;
             timerText.alpha = alpha;
 

@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
+        canMove = true;
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }

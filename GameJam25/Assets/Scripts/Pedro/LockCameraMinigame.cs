@@ -6,11 +6,20 @@ public class LockCameraMinigame : MonoBehaviour, IInteractable
 {
     [SerializeField] Transform lockPlace;
     [SerializeField] TextMeshProUGUI text;
-    [SerializeField] CinemachineCamera CMcam;
     [SerializeField] CinemachineCamera CMcamNew;
-
-    Vector3 originalPos;
-    Transform originalFollow;
+    [SerializeField] GameObject particle;
+    public static LockCameraMinigame instance;
+    void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         text.gameObject.SetActive(false);
@@ -25,9 +34,17 @@ public class LockCameraMinigame : MonoBehaviour, IInteractable
     {
         print("Locking camera");
         CMcamNew.Priority = 2;
-
-        //CMcam.Follow = null;
-        //CMcam.transform.position = lockPlace.transform.position;
+        CountdownTimer.instance.canCount = false;
+        Player.instance.canMove = false;
+    }
+    public void Deactivate()
+    {
+        particle.SetActive(false);
+        text.gameObject.SetActive(false);
+        CMcamNew.Priority = 0;
+        CountdownTimer.instance.canCount = true;
+        Player.instance.canMove = true;
+        Destroy(this);
     }
 
     public void LeaveRadius()

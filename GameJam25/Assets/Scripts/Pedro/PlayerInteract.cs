@@ -18,7 +18,7 @@ public class PlayerInteract : MonoBehaviour
 
         else if(radius == null && objInRadius != null)
         {
-            objInRadius.GetComponent<IInteractable>().LeaveRadius();
+            objInRadius.GetComponent<IInteractable>()?.LeaveRadius();
             objInRadius = null;
             enteredRadius = false;
             return;

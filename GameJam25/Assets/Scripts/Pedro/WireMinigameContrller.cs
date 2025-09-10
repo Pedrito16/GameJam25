@@ -34,6 +34,7 @@ public class WireMinigameContrller : MonoBehaviour
 
         if (completed)
         {
+            LockCameraMinigame.instance.Deactivate();
             Debug.Log("Minigame Completed!");
         }
     }
