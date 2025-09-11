@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 425539379}
   - component: {fileID: 425539378}
   - component: {fileID: 425539380}
+  - component: {fileID: 425539381}
   m_Layer: 0
   m_Name: TextoCredito
   m_TagString: Untagged
@@ -519,7 +520,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425539376}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad5e167c8e7f05d46b9ef8aadc0a15f6, type: 3}
   m_Name: 
@@ -560,6 +561,28 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+--- !u!95 &425539381
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425539376}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8b1ba32eeb22882469d2901152bcfad9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &446961525
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +782,7 @@ GameObject:
   - component: {fileID: 571909709}
   - component: {fileID: 571909708}
   - component: {fileID: 571909711}
+  - component: {fileID: 571909712}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -893,6 +917,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleDownFactor: 0.9
   animationDuration: 0.15
+--- !u!95 &571909712
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571909706}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67cc4e6e1c767044bb432b50e7b86eb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &716776253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1677,7 +1723,7 @@ Animator:
   m_GameObject: {fileID: 1217638892}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f7c99e412ac7d94fbf3f07cb0833ae9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67cc4e6e1c767044bb432b50e7b86eb8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1947,6 +1993,7 @@ GameObject:
   - component: {fileID: 1826053938}
   - component: {fileID: 1826053937}
   - component: {fileID: 1826053940}
+  - component: {fileID: 1826053941}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -2093,6 +2140,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleDownFactor: 0.9
   animationDuration: 0.15
+--- !u!95 &1826053941
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826053935}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67cc4e6e1c767044bb432b50e7b86eb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2104211413
 GameObject:
   m_ObjectHideFlags: 0
