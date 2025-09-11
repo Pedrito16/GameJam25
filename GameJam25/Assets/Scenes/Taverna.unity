@@ -2093,6 +2093,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 820481471}
     m_Modifications:
+    - target: {fileID: 5892799250487263083, guid: d16f51f7b022c00428e1c530c7dd5c77, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6782886985404609820, guid: d16f51f7b022c00428e1c530c7dd5c77, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.119
@@ -7399,7 +7403,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: asdas
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30d0a0637c0db864199273c0d7772286, type: 2}
   m_sharedMaterial: {fileID: 576438942428976402, guid: 30d0a0637c0db864199273c0d7772286, type: 2}
