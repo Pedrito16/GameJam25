@@ -18,7 +18,7 @@ MonoBehaviour:
     m_Value: 20.4
   tint:
     m_OverrideState: 0
-    m_Value: -32.2
+    m_Value: 5.2
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
