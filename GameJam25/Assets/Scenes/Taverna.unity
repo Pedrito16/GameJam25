@@ -2093,6 +2093,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 820481471}
     m_Modifications:
+    - target: {fileID: 5348181414637863783, guid: d16f51f7b022c00428e1c530c7dd5c77, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 060f2f255245c9944bf70b31c7105a87, type: 2}
     - target: {fileID: 5892799250487263083, guid: d16f51f7b022c00428e1c530c7dd5c77, type: 3}
       propertyPath: m_text
       value: 
@@ -6958,7 +6962,8 @@ MonoBehaviour:
   text: {fileID: 2109146597}
   condition: 1
   usePlayerPos: 1
-  sceneName: DentroHangar
+  sceneName: ForaHangar
+  sairOuEntrar: 0
   onLoadScene:
     m_PersistentCalls:
       m_Calls:

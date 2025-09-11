@@ -4,17 +4,20 @@ using UnityEngine.EventSystems;
 public class EventSystemMnanager : MonoBehaviour
 {
     [SerializeField] EventSystem eventSystem;
+    public static EventSystemMnanager instance;
     private void Awake()
     {
-        DontDestroyOnLoad(transform.root);
-        
+        if (instance == null) 
+        {
+            instance = this;
+            DontDestroyOnLoad(transform.root);
+        }else
+            Destroy(gameObject);
     }
     void Start()
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
         

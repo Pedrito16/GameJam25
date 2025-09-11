@@ -38,9 +38,14 @@ public class MinigamesController : MonoBehaviour
 
         text.gameObject.SetActive(false);
         int minigames = PlayerPrefs.GetInt("MinigamesCompleted", 0);
-        if(minigames > 0)
+        int alreadyActivated = PlayerPrefs.GetInt("AlreadyActivated", 0);
+        if(minigames > 0 && alreadyActivated == 0)
         {
             ActivateEverything();
+            allCompleted = true;
+            interactable.condition = allCompleted;
+        }else if(alreadyActivated == 1)
+        {
             allCompleted = true;
             interactable.condition = allCompleted;
         }

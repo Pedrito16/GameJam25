@@ -11,9 +11,12 @@ public class Menu : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        PlayerPrefs.DeleteKey("MinigamesCompleted");
-        DeletarSave();
         SceneManager.LoadScene(sceneName);
+        if (PlayerPrefs.HasKey("MinigamesCompleted"))
+            PlayerPrefs.DeleteKey("MinigamesCompleted");
+
+        DeletarSave();
+
     }
     void DeletarSave()
     {
@@ -28,6 +31,7 @@ public class Menu : MonoBehaviour
         else
         {
             Debug.Log("Nenhum save encontrado");
+            return;
         }
     }
     public void AbrirPainel()

@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class FogueteScript : MonoBehaviour, IInteractable
 {
@@ -82,7 +83,16 @@ public class FogueteScript : MonoBehaviour, IInteractable
         if(isOnRadius && Input.GetKeyDown(KeyCode.T) && canInteract && canLaunch)
         {
             print("Lançando foguete");
-            //lógica de acabar o jogo(cutscene)
+            CountdownTimer.instance.SetActive(false);
+            CountdownTimer.instance.PauseTimer(true);
+
+            LivroButton.instance.SetActive(false);
+            InventoryManager.instance.SetActive(false);
+
+            PassInfo.instance.totalScore = totalScore;
+            PassInfo.instance.scoreTypes = scoreType;
+
+            SceneManager.LoadScene("Final");
         }
     }
 }

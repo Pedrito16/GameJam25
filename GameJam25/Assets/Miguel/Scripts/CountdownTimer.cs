@@ -2,12 +2,13 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
     [Header("Configurações do Timer")]
     public float startMinutes = 5f;
-    public bool startOnAwake = true;
+    public bool startOnAwake = false;
 
     [Header("Referência do Text Mesh Pro")]
     public TextMeshProUGUI timerText;
@@ -29,13 +30,17 @@ public class CountdownTimer : MonoBehaviour
     public static CountdownTimer instance;
     private void Awake()
     {
+        Debug.Log($"CountdownTimer Awake - name:{name} id:{GetInstanceID()} instance={instance} currentTime={currentTime}");
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(transform.root);
+            DontDestroyOnLoad(gameObject);
         }
         else
+        {
+            print("objeto duplicado de timer destruido");
             Destroy(gameObject);
+        }
     }
 
     void Start()
@@ -44,10 +49,11 @@ public class CountdownTimer : MonoBehaviour
         canCount = true;
 
 
-        if (startOnAwake)
-        {
-            StartTimer();
-        }
+        
+    }
+    public void SetActive(bool enable)
+    {
+        timerText.gameObject.SetActive(enable);
     }
     public void TimerShowAndStart()
     {
@@ -63,6 +69,7 @@ public class CountdownTimer : MonoBehaviour
 
     public void StartTimer()
     {
+        print("startTimer");
         if (isTimerRunning) return;
 
         isTimerRunning = true;
@@ -203,6 +210,7 @@ public class CountdownTimer : MonoBehaviour
             timerText.text = "00:00";
             timerText.color = dangerColor;
             timerText.alpha = 1f;
+            SceneManager.LoadScene("Perdeu");
         }
 
         Debug.Log("Tempo esgotado! Game Over!");
@@ -239,10 +247,7 @@ public class CountdownTimer : MonoBehaviour
 
     void OnEnable()
     {
-        if (isTimerRunning)
-        {
-            StartTimer();
-        }
+
     }
 
     void OnDisable()

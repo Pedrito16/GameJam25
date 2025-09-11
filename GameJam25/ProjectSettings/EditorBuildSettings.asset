@@ -15,14 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/DentroHangar.unity
     guid: 032abf06c51b8a84c86d8305ce3840aa
   - enabled: 1
-    path: Assets/Scenes/Miguel.unity
-    guid: eb55ff3e20126024b8f806beb135bcda
-  - enabled: 1
     path: Assets/Scenes/ForaHangar.unity
     guid: cf5c5482d06acf841881ac4271be8192
   - enabled: 1
     path: Assets/Scenes/Taverna.unity
     guid: e592f1385fab4c841b3b38c6dc97a80e
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 2fa13443db6bff545bc9bd72bb8f9441
+  - enabled: 1
+    path: Assets/Scenes/Perdeu.unity
+    guid: 7f8b8e438e5740c42832c2e31dcec83e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
