@@ -17,6 +17,9 @@ public class LivroController : MonoBehaviour
     [SerializeField] Page[] pages;
     public int pagAtual;
 
+    [SerializeField] GameObject passarSeta;
+    [SerializeField] GameObject voltarSeta;
+
     public static LivroController instance;
     void Awake()
     {
@@ -35,10 +38,6 @@ public class LivroController : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
         pagAtual = -1;
     }
-    void Update()
-    {
-
-    }
     public void Fechar()
     {
         transform.GetChild(0).gameObject.SetActive(false);
@@ -50,6 +49,9 @@ public class LivroController : MonoBehaviour
     }
     public void PassarPag(bool somar = true)
     {
+        voltarSeta.gameObject.SetActive(true);
+        passarSeta.gameObject.SetActive(true);
+
         Player.instance.canMove = false;
         CountdownTimer.instance.PauseTimer(true);
 
@@ -64,11 +66,13 @@ public class LivroController : MonoBehaviour
 
         if (pagAtual <= 0)
         {
+            voltarSeta.SetActive(false);
             bookImage.sprite = bookSprites[0];
         }
         else if (pagAtual == pages.Length - 1)
         {
             bookImage.sprite = bookSprites[2];
+            passarSeta.SetActive(false);
         }
         else if (pagAtual < pages.Length)
         {

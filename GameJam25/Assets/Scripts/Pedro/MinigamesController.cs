@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MinigamesController : MonoBehaviour, IInteractable
+public class MinigamesController : MonoBehaviour
 {
     [SerializeField] int minigamesToComplete = 2;
     [SerializeField] TextMeshProUGUI text;
@@ -10,7 +10,7 @@ public class MinigamesController : MonoBehaviour, IInteractable
     [SerializeField] AudioSource doorUnlockSound;
     int minigamesCompleted = 0;
     bool allCompleted;
-
+    EnterBuilding interactable;
     public static MinigamesController instance;
     void Awake()
     {
@@ -22,15 +22,23 @@ public class MinigamesController : MonoBehaviour, IInteractable
         {
             Destroy(gameObject);
         }
+        //PlayerPrefs.DeleteAll();
+
     }
     void Start()
     {
+        interactable = GetComponent<EnterBuilding>();
+        interactable.text = text;
+        
+        interactable.sceneName = "ForaHangar";
+
         text.gameObject.SetActive(false);
         int minigames = PlayerPrefs.GetInt("MinigamesCompleted", 0);
         if(minigames > 0)
         {
             ActivateEverything();
             allCompleted = true;
+            interactable.condition = allCompleted;
         }
     }
     void ActivateEverything()
@@ -50,32 +58,12 @@ public class MinigamesController : MonoBehaviour, IInteractable
             print("todos os minigames concluidos");
             PlayerPrefs.SetInt("MinigamesCompleted", 1);
             allCompleted = true;
+            interactable.condition = allCompleted;
             doorUnlockSound?.Play();
             LivroButton.instance.SetActive(true);
             InventoryManager.instance.SetActive(true);
             CountdownTimer.instance.TimerShowAndStart();
             MainTextController.instance.WriteText("Concluído! A porta foi liberada", Color.green);
         }
-    }
-
-    public void EnterRadius()
-    {
-        if(!allCompleted) return;
-
-        text.gameObject.SetActive(true);
-        text.text = "<color=yellow>E</color> - Sair";
-    }
-
-    public void LeaveRadius()
-    {
-        if (!allCompleted) return;
-
-        text.gameObject.SetActive(false);
-    }
-
-    public void Interact()
-    {
-        if(allCompleted)
-            SceneManager.LoadScene("ForaHangar");
     }
 }

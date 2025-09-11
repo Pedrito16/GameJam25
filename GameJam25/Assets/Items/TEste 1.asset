@@ -15,4 +15,6 @@ MonoBehaviour:
   itemName: Suprimento
   itemSprite: {fileID: -7580738133652620349, guid: 934e1de8cab51824fb309bd882536732, type: 3}
   tipoDeItem: 1
+  score: 30
   typeColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  hasBeenTaken: 0

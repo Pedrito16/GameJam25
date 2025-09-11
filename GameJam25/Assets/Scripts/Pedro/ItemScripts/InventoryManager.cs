@@ -80,6 +80,32 @@ public class InventoryManager : MonoBehaviour
         originalObject.gameObject.SetActive(true);
         Destroy(itemRect.gameObject);
     }
+    public bool HasItems()
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].rectTransform.childCount > 0)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    public Item[] SlotsWithItem()
+    {
+        List<Item> itemsQuantity = new List<Item>();
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].rectTransform.childCount <= 0) continue;
+
+            Item container = slots[i].rectTransform.GetChild(0).GetComponent<ItemContainer>().item;
+            if (container != null)
+            {
+                itemsQuantity.Add(container);
+            }
+        }
+        return itemsQuantity.ToArray();
+    }
     public RectTransform FindFirstAvailableSlot()
     {
         for(int i = 0; i < slots.Count; i++)
@@ -89,7 +115,7 @@ public class InventoryManager : MonoBehaviour
                 return slots[i].rectTransform;
             }
         }
-        print("No available slots");
+        MainTextController.instance.WriteText("Inventário cheio!", Color.red);
         return null;
     }
 }

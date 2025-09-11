@@ -4,11 +4,14 @@ using UnityEngine;
 public class ItemOnFloor : MonoBehaviour, IInteractable
 {
     [Header("SLOT DO ITEM")]
-    [SerializeField] Item item;
-
+    public Item item;
+    public int id;
     TextMeshProUGUI CollectText;
     void Start()
     {
+        Item newItem = Instantiate(item);
+        item = newItem;
+
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = item.itemSprite;
         CollectText = GetComponentInChildren<TextMeshProUGUI>();
@@ -22,7 +25,8 @@ public class ItemOnFloor : MonoBehaviour, IInteractable
     public void Interact()
     {
         InventoryManager.instance.AddItem(item, transform.position);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        item.hasBeenTaken = true;
     }
 
     public void LeaveRadius()

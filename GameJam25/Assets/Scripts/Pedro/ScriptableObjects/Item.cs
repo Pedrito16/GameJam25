@@ -12,7 +12,9 @@ public class Item : ScriptableObject
     public string itemName;
     public Sprite itemSprite;
     public ItemType tipoDeItem;
+    public int score;
     [HideInInspector] public Color typeColor;
+    public bool hasBeenTaken = false;
 
     public void OnValidate()
     {
