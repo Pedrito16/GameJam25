@@ -6,7 +6,7 @@ public class ItemOnFloor : MonoBehaviour, IInteractable
     [Header("SLOT DO ITEM")]
     public Item item;
     public int id;
-    TextMeshProUGUI CollectText;
+    [SerializeField] TextMeshProUGUI CollectText;
     void Start()
     {
         Item newItem = Instantiate(item);
