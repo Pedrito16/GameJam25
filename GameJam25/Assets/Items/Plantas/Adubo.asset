@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Adubo
   itemSprite: {fileID: -454839662452957051, guid: 627478888173d0c43b8733d2835beb0a, type: 3}
   tipoDeItem: 0
-  score: 50
+  score: 40
   typeColor: {r: 0, g: 1, b: 0, a: 1}
   hasBeenTaken: 0

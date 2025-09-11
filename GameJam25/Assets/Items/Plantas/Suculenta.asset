@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Suculenta
   itemSprite: {fileID: -7507907947608166738, guid: 1ec14093d520aab439b36599673d874e, type: 3}
   tipoDeItem: 0
-  score: 25
+  score: 15
   typeColor: {r: 0, g: 1, b: 0, a: 1}
   hasBeenTaken: 0
