@@ -9,14 +9,14 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] GameObject sorterHierarchy;
     [SerializeField] List<Image> slots;
     [SerializeField] GameObject itemTemplate;
-
+    [SerializeField] bool showOnStart = false;
     public static InventoryManager instance;
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(transform.root);
         }
         else Destroy(gameObject);
     }
@@ -26,7 +26,7 @@ public class InventoryManager : MonoBehaviour
         {
             slots.Add(child.GetComponent<Image>());
         }
-        SetActive(false);
+        SetActive(showOnStart);
     }
     public void ClearInventory()
     {

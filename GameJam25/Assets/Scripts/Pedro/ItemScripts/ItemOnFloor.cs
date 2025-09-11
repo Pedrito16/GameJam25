@@ -18,7 +18,7 @@ public class ItemOnFloor : MonoBehaviour, IInteractable
     }
     public void EnterRadius()
     {
-        CollectText.text = "<Color=black>E</Color> - Coletar";
+        CollectText.text = "<Color=blue>E</color> - Pegar";
         print("Interagindo");
     }
 

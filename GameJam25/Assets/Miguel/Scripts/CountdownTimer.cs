@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.Events;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -16,12 +17,14 @@ public class CountdownTimer : MonoBehaviour
     public Color dangerColor = Color.red;
     public float blinkSpeed = 2f;
 
-    private float currentTime;
+    [SerializeField] private float currentTime;
     private bool isTimerRunning = false;
     private bool isBlinking = false;
     public bool canCount;
     private Coroutine timerCoroutine;
     private Coroutine blinkCoroutine;
+    [SerializeField] private float whenToInvokeMinuteEvent = 100; //in seconds
+    public UnityEvent onMinuteRemaining;
 
     public static CountdownTimer instance;
     private void Awake()
@@ -127,6 +130,12 @@ public class CountdownTimer : MonoBehaviour
     {
         if (timerText == null) return;
 
+        if(currentTime <= whenToInvokeMinuteEvent && currentTime > 0f)
+        {
+            print("faltando tempo e disparando evento");
+            onMinuteRemaining?.Invoke();
+            whenToInvokeMinuteEvent = -1f; //ensure it only invokes once
+        }
         if (currentTime <= 60f && currentTime > 0f)
         {
             timerText.color = dangerColor;

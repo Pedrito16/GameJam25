@@ -11,6 +11,7 @@ public class MainTextController : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(transform.root);
         }
         else
         {
@@ -29,7 +30,7 @@ public class MainTextController : MonoBehaviour
     }
     IEnumerator ClearText()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3.5f);
         mainText.text = "";
     }
 }

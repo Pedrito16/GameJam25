@@ -21,7 +21,7 @@ public class SaveItems : MonoBehaviour
         {
             itemsOnFloor[i].id = i + 1;
         }
-        caminho = Application.persistentDataPath + "/items.json";
+        caminho = Application.persistentDataPath + caminho;
         Carregar();
     }
     public void Salvar()

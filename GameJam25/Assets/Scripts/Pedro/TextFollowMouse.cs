@@ -5,6 +5,7 @@ public class TextFollowMouse : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Vector3 offset;
+    [SerializeField] bool showOnStart = false;
     bool canFollow;
     public static TextFollowMouse instance;
     private void Awake()
@@ -14,7 +15,7 @@ public class TextFollowMouse : MonoBehaviour
     }
     void Start()
     {
-        EnableOrDisableFollow(false);
+        EnableOrDisableFollow(showOnStart);
     }
     public void EnableOrDisableFollow(bool enable)
     {

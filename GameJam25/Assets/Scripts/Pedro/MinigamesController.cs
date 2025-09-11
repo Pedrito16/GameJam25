@@ -23,7 +23,11 @@ public class MinigamesController : MonoBehaviour
             Destroy(gameObject);
         }
         //PlayerPrefs.DeleteAll();
-
+    }
+    [ContextMenu("Apagar Save")]
+    void ApagarSave()
+    {
+        PlayerPrefs.DeleteKey("MinigamesCompleted");
     }
     void Start()
     {
@@ -53,6 +57,7 @@ public class MinigamesController : MonoBehaviour
         completeSound?.Play();
         MainTextController.instance.WriteText("Concluído!", Color.green);
 
+        //esse if inteiro poderia ser substituido por um DELEGATE, mas é a game jam e eu to com preguiça
         if (minigamesCompleted >= minigamesToComplete)
         {
             print("todos os minigames concluidos");
@@ -60,10 +65,11 @@ public class MinigamesController : MonoBehaviour
             allCompleted = true;
             interactable.condition = allCompleted;
             doorUnlockSound?.Play();
+            FogueteScript.instance.canInteract = true;     
             LivroButton.instance.SetActive(true);
             InventoryManager.instance.SetActive(true);
             CountdownTimer.instance.TimerShowAndStart();
-            MainTextController.instance.WriteText("Concluído! A porta foi liberada", Color.green);
+            MainTextController.instance.WriteText("Concluído! Vá adquirir recursos", Color.green);
         }
     }
 }

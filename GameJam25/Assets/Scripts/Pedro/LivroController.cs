@@ -10,13 +10,13 @@ public class LivroController : MonoBehaviour
         public TextMeshProUGUI[] texts;
         public Image[] images;
     }
-
+    [SerializeField] GameObject fundo;
     [SerializeField] Sprite[] bookSprites;
     [SerializeField] Image bookImage;
 
     [SerializeField] Page[] pages;
     public int pagAtual;
-
+    [SerializeField] AudioSource pagSound;
     [SerializeField] GameObject passarSeta;
     [SerializeField] GameObject voltarSeta;
 
@@ -26,7 +26,6 @@ public class LivroController : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -35,12 +34,12 @@ public class LivroController : MonoBehaviour
     }
     void Start()
     {
-        transform.GetChild(0).gameObject.SetActive(false);
+        fundo.SetActive(false);
         pagAtual = -1;
     }
     public void Fechar()
     {
-        transform.GetChild(0).gameObject.SetActive(false);
+        fundo.SetActive(false);
         pagAtual = -1;
 
         Player.instance.canMove = true;
@@ -55,7 +54,7 @@ public class LivroController : MonoBehaviour
         Player.instance.canMove = false;
         CountdownTimer.instance.PauseTimer(true);
 
-        transform.GetChild(0).gameObject.SetActive(true);
+        fundo.SetActive(true);
 
         if (somar) pagAtual++;
         else pagAtual--;
@@ -63,6 +62,10 @@ public class LivroController : MonoBehaviour
         print("Passando página: " + pagAtual);
 
         pagAtual = Mathf.Clamp(pagAtual, 0, pages.Length - 1);
+
+        int random = Random.Range(1, 2);
+        pagSound.pitch = pagSound.pitch + (random * 0.05f);
+        pagSound?.Play();
 
         if (pagAtual <= 0)
         {

@@ -6,6 +6,7 @@ public class EnterBuilding : MonoBehaviour, IInteractable
 {
     public TextMeshProUGUI text;
     public bool condition;
+    public bool usePlayerPos;
     public string sceneName;
     [SerializeField] UnityEvent onLoadScene;
     public void EnterRadius()
@@ -28,6 +29,8 @@ public class EnterBuilding : MonoBehaviour, IInteractable
         if (condition)
         {
             onLoadScene?.Invoke();
+            if (usePlayerPos)
+                PassInfo.instance.LoadPlayerPos();
             SceneManager.LoadScene(sceneName);
         }
     }
